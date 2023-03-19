@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F1B74D229A3E89500D86081 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B74D129A3E89500D86081 /* AppDelegate.swift */; };
+		1F1B74D429A3E89500D86081 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B74D329A3E89500D86081 /* SceneDelegate.swift */; };
+		1F1B74D629A3E89500D86081 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B74D529A3E89500D86081 /* ViewController.swift */; };
+		1F1B74D929A3E89500D86081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B74D729A3E89500D86081 /* Main.storyboard */; };
+		1F1B74DB29A3E89500D86081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B74DA29A3E89500D86081 /* Assets.xcassets */; };
+		1F1B74DE29A3E89500D86081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B74DC29A3E89500D86081 /* LaunchScreen.storyboard */; };
+		1F3535BE29C7447300B3B151 /* HomeTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3535BD29C7447300B3B151 /* HomeTaskViewController.swift */; };
+		1F3535C329C7452300B3B151 /* HomeTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3535C129C7452300B3B151 /* HomeTaskTableViewCell.swift */; };
+		1F3535C429C7452300B3B151 /* HomeTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3535C229C7452300B3B151 /* HomeTaskTableViewCell.xib */; };
+		1F3535C629C75B8500B3B151 /* UserRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3535C529C75B8500B3B151 /* UserRole.swift */; };
+		1F4F89B329B3918A00018592 /* WeekdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F89B229B3918A00018592 /* WeekdayViewController.swift */; };
+		1F4F89B529B391C500018592 /* TimesheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F89B429B391C500018592 /* TimesheetViewController.swift */; };
+		1F522AE429A4FEF200F66B84 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F522AE329A4FEF200F66B84 /* RegistrationViewController.swift */; };
+		1F522AE629A55C6A00F66B84 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F522AE529A55C6A00F66B84 /* ProfileViewController.swift */; };
+		1F6C72F329C4B4B5005D4EC1 /* StudentTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C72F229C4B4B5005D4EC1 /* StudentTabBarController.swift */; };
+		1F6C72F929C4B52D005D4EC1 /* TeacherTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C72F829C4B52D005D4EC1 /* TeacherTabBarController.swift */; };
+		1F6C72FC29C4CD6C005D4EC1 /* SaveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C72FB29C4CD6C005D4EC1 /* SaveManager.swift */; };
+		1F7CA82A29A3F95A006D5829 /* LuckiestGuy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F7CA82929A3F95A006D5829 /* LuckiestGuy-Regular.ttf */; };
+		1F7CA82C29A3FB27006D5829 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7CA82B29A3FB27006D5829 /* SignInViewController.swift */; };
+		1F87393029BDE9670042452C /* CellsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87392F29BDE9670042452C /* CellsEnum.swift */; };
+		1F87393429BDFCB90042452C /* TimesheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87393229BDFCB90042452C /* TimesheetTableViewCell.swift */; };
+		1F87393529BDFCB90042452C /* TimesheetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F87393329BDFCB90042452C /* TimesheetTableViewCell.xib */; };
+		1F87393A29BE26F40042452C /* TeacherProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87393929BE26F40042452C /* TeacherProfileViewController.swift */; };
+		1F88A37429BA07AE000E5208 /* SettingsCellsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F88A37329BA07AE000E5208 /* SettingsCellsType.swift */; };
+		1F89BD4E29C4763D004D3E98 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89BD4D29C4763D004D3E98 /* UIViewController+Extension.swift */; };
+		1F89BD5129C478A2004D3E98 /* SchoolAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89BD5029C478A2004D3E98 /* SchoolAPI.swift */; };
+		1F89BD5329C478AF004D3E98 /* SchoolProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89BD5229C478AF004D3E98 /* SchoolProvider.swift */; };
+		1F89BD5529C478BA004D3E98 /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89BD5429C478BA004D3E98 /* SchoolModel.swift */; };
+		1FC3317929B394B400B123C1 /* WeekdayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3317729B394B400B123C1 /* WeekdayCollectionViewCell.swift */; };
+		1FC3317A29B394B400B123C1 /* WeekdayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FC3317829B394B400B123C1 /* WeekdayCollectionViewCell.xib */; };
+		1FC3317D29B395C600B123C1 /* DaysOfWeekEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3317C29B395C600B123C1 /* DaysOfWeekEnum.swift */; };
+		1FD385D529C0C614001D404C /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD385D329C0C614001D404C /* ColorTableViewCell.swift */; };
+		1FD385D629C0C614001D404C /* ColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD385D429C0C614001D404C /* ColorTableViewCell.xib */; };
+		1FE189EF29A652CE00FECF09 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE189EE29A652CE00FECF09 /* SettingsViewController.swift */; };
+		1FE189F329A655E600FECF09 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE189F129A655E600FECF09 /* SettingsTableViewCell.swift */; };
+		1FE189F429A655E600FECF09 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FE189F229A655E600FECF09 /* SettingsTableViewCell.xib */; };
+		FC4FE665AD03DC7C82FB646F /* Pods_SchoolAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F416DF93CCD77AFF9D0C06CD /* Pods_SchoolAssistant.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F1B74CE29A3E89500D86081 /* SchoolAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F1B74D129A3E89500D86081 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F1B74D329A3E89500D86081 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1F1B74D529A3E89500D86081 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F1B74D829A3E89500D86081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F1B74DA29A3E89500D86081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F1B74DD29A3E89500D86081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F1B74DF29A3E89500D86081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F3535BD29C7447300B3B151 /* HomeTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTaskViewController.swift; sourceTree = "<group>"; };
+		1F3535C129C7452300B3B151 /* HomeTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTaskTableViewCell.swift; sourceTree = "<group>"; };
+		1F3535C229C7452300B3B151 /* HomeTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTaskTableViewCell.xib; sourceTree = "<group>"; };
+		1F3535C529C75B8500B3B151 /* UserRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRole.swift; sourceTree = "<group>"; };
+		1F4F89B229B3918A00018592 /* WeekdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayViewController.swift; sourceTree = "<group>"; };
+		1F4F89B429B391C500018592 /* TimesheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetViewController.swift; sourceTree = "<group>"; };
+		1F522AE329A4FEF200F66B84 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		1F522AE529A55C6A00F66B84 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1F6C72F229C4B4B5005D4EC1 /* StudentTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTabBarController.swift; sourceTree = "<group>"; };
+		1F6C72F829C4B52D005D4EC1 /* TeacherTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherTabBarController.swift; sourceTree = "<group>"; };
+		1F6C72FB29C4CD6C005D4EC1 /* SaveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveManager.swift; sourceTree = "<group>"; };
+		1F7CA82929A3F95A006D5829 /* LuckiestGuy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LuckiestGuy-Regular.ttf"; path = "../../Fonts/LuckiestGuy-Regular.ttf"; sourceTree = "<group>"; };
+		1F7CA82B29A3FB27006D5829 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		1F87392F29BDE9670042452C /* CellsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsEnum.swift; sourceTree = "<group>"; };
+		1F87393229BDFCB90042452C /* TimesheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetTableViewCell.swift; sourceTree = "<group>"; };
+		1F87393329BDFCB90042452C /* TimesheetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimesheetTableViewCell.xib; sourceTree = "<group>"; };
+		1F87393929BE26F40042452C /* TeacherProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherProfileViewController.swift; sourceTree = "<group>"; };
+		1F88A37329BA07AE000E5208 /* SettingsCellsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellsType.swift; sourceTree = "<group>"; };
+		1F89BD4D29C4763D004D3E98 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		1F89BD5029C478A2004D3E98 /* SchoolAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolAPI.swift; sourceTree = "<group>"; };
+		1F89BD5229C478AF004D3E98 /* SchoolProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolProvider.swift; sourceTree = "<group>"; };
+		1F89BD5429C478BA004D3E98 /* SchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
+		1FC3317729B394B400B123C1 /* WeekdayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayCollectionViewCell.swift; sourceTree = "<group>"; };
+		1FC3317829B394B400B123C1 /* WeekdayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekdayCollectionViewCell.xib; sourceTree = "<group>"; };
+		1FC3317C29B395C600B123C1 /* DaysOfWeekEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysOfWeekEnum.swift; sourceTree = "<group>"; };
+		1FD385D329C0C614001D404C /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
+		1FD385D429C0C614001D404C /* ColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorTableViewCell.xib; sourceTree = "<group>"; };
+		1FE189EE29A652CE00FECF09 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1FE189F129A655E600FECF09 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		1FE189F229A655E600FECF09 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		C0B775E11DCD6018506729F4 /* Pods-SchoolAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolAssistant.release.xcconfig"; path = "Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		F416DF93CCD77AFF9D0C06CD /* Pods_SchoolAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48655B995C17346DE6482BB /* Pods-SchoolAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolAssistant.debug.xcconfig"; path = "Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F1B74CB29A3E89500D86081 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4FE665AD03DC7C82FB646F /* Pods_SchoolAssistant.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F1B74C529A3E89500D86081 = {
+			isa = PBXGroup;
+			children = (
+				1F1B74D029A3E89500D86081 /* SchoolAssistant */,
+				1F1B74CF29A3E89500D86081 /* Products */,
+				7CE6D80AEBA410B2CD03D861 /* Pods */,
+				257C276992FFA693998125AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F1B74CF29A3E89500D86081 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F1B74CE29A3E89500D86081 /* SchoolAssistant.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F1B74D029A3E89500D86081 /* SchoolAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				1F7CA82829A3F131006D5829 /* General */,
+				1F7CA82729A3F0F3006D5829 /* Teacher */,
+				1F7CA82629A3F0E6006D5829 /* Student */,
+				1F7CA82529A3F0DA006D5829 /* Extension */,
+				1F7CA82429A3F0C1006D5829 /* SignIn */,
+				1F1B74D129A3E89500D86081 /* AppDelegate.swift */,
+				1F1B74D329A3E89500D86081 /* SceneDelegate.swift */,
+				1F1B74D529A3E89500D86081 /* ViewController.swift */,
+				1F1B74D729A3E89500D86081 /* Main.storyboard */,
+				1F1B74DA29A3E89500D86081 /* Assets.xcassets */,
+				1F1B74DC29A3E89500D86081 /* LaunchScreen.storyboard */,
+				1F1B74DF29A3E89500D86081 /* Info.plist */,
+				1F7CA82929A3F95A006D5829 /* LuckiestGuy-Regular.ttf */,
+			);
+			path = SchoolAssistant;
+			sourceTree = "<group>";
+		};
+		1F3535BC29C7443700B3B151 /* HomeTask */ = {
+			isa = PBXGroup;
+			children = (
+				1F3535BF29C744B800B3B151 /* HomeTaskTableViewCell */,
+				1F3535BD29C7447300B3B151 /* HomeTaskViewController.swift */,
+			);
+			path = HomeTask;
+			sourceTree = "<group>";
+		};
+		1F3535BF29C744B800B3B151 /* HomeTaskTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1F3535C129C7452300B3B151 /* HomeTaskTableViewCell.swift */,
+				1F3535C229C7452300B3B151 /* HomeTaskTableViewCell.xib */,
+			);
+			path = HomeTaskTableViewCell;
+			sourceTree = "<group>";
+		};
+		1F6C72EC29C4B3F3005D4EC1 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				1F6C72F829C4B52D005D4EC1 /* TeacherTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		1F6C72ED29C4B41A005D4EC1 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				1F6C72F229C4B4B5005D4EC1 /* StudentTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		1F6C72FA29C4CD47005D4EC1 /* DefaultManager */ = {
+			isa = PBXGroup;
+			children = (
+				1F6C72FB29C4CD6C005D4EC1 /* SaveManager.swift */,
+			);
+			path = DefaultManager;
+			sourceTree = "<group>";
+		};
+		1F7CA82429A3F0C1006D5829 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				1F7CA82B29A3FB27006D5829 /* SignInViewController.swift */,
+				1F522AE329A4FEF200F66B84 /* RegistrationViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		1F7CA82529A3F0DA006D5829 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1F89BD4D29C4763D004D3E98 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1F7CA82629A3F0E6006D5829 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				1F6C72ED29C4B41A005D4EC1 /* TabBarController */,
+				1F87391C29BB520B0042452C /* Profile */,
+				1FA787E729ABA58800EFDCB0 /* Schedule */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		1F7CA82729A3F0F3006D5829 /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				1F3535BC29C7443700B3B151 /* HomeTask */,
+				1F6C72EC29C4B3F3005D4EC1 /* TabBarController */,
+				1F87393829BE26D20042452C /* Profile */,
+			);
+			path = Teacher;
+			sourceTree = "<group>";
+		};
+		1F7CA82829A3F131006D5829 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				1F6C72FA29C4CD47005D4EC1 /* DefaultManager */,
+				1F89BD4F29C4773D004D3E98 /* API */,
+				1F88A37229BA0786000E5208 /* Enums */,
+				1FDF075029B0C96400155786 /* SettingsTableViewCells */,
+				1FE189EE29A652CE00FECF09 /* SettingsViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		1F87391C29BB520B0042452C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1F87392C29BB6ED10042452C /* Enums */,
+				1F522AE529A55C6A00F66B84 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1F87392C29BB6ED10042452C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1F87392F29BDE9670042452C /* CellsEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		1F87393129BDFB580042452C /* TimesheetTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1F87393229BDFCB90042452C /* TimesheetTableViewCell.swift */,
+				1F87393329BDFCB90042452C /* TimesheetTableViewCell.xib */,
+				1FD385D329C0C614001D404C /* ColorTableViewCell.swift */,
+				1FD385D429C0C614001D404C /* ColorTableViewCell.xib */,
+			);
+			path = TimesheetTableViewCell;
+			sourceTree = "<group>";
+		};
+		1F87393829BE26D20042452C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1F87393929BE26F40042452C /* TeacherProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1F88A37229BA0786000E5208 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1F88A37329BA07AE000E5208 /* SettingsCellsType.swift */,
+				1F3535C529C75B8500B3B151 /* UserRole.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		1F89BD4F29C4773D004D3E98 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1F89BD5029C478A2004D3E98 /* SchoolAPI.swift */,
+				1F89BD5229C478AF004D3E98 /* SchoolProvider.swift */,
+				1F89BD5429C478BA004D3E98 /* SchoolModel.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1FA787E729ABA58800EFDCB0 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				1F87393129BDFB580042452C /* TimesheetTableViewCell */,
+				1FC3317B29B3959F00B123C1 /* Enums */,
+				1FC3317629B3948800B123C1 /* WeekdayCollectionViewCell */,
+				1F4F89B229B3918A00018592 /* WeekdayViewController.swift */,
+				1F4F89B429B391C500018592 /* TimesheetViewController.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		1FC3317629B3948800B123C1 /* WeekdayCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3317729B394B400B123C1 /* WeekdayCollectionViewCell.swift */,
+				1FC3317829B394B400B123C1 /* WeekdayCollectionViewCell.xib */,
+			);
+			path = WeekdayCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		1FC3317B29B3959F00B123C1 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3317C29B395C600B123C1 /* DaysOfWeekEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		1FDF075029B0C96400155786 /* SettingsTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1FE189F129A655E600FECF09 /* SettingsTableViewCell.swift */,
+				1FE189F229A655E600FECF09 /* SettingsTableViewCell.xib */,
+			);
+			path = SettingsTableViewCells;
+			sourceTree = "<group>";
+		};
+		257C276992FFA693998125AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F416DF93CCD77AFF9D0C06CD /* Pods_SchoolAssistant.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CE6D80AEBA410B2CD03D861 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F48655B995C17346DE6482BB /* Pods-SchoolAssistant.debug.xcconfig */,
+				C0B775E11DCD6018506729F4 /* Pods-SchoolAssistant.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F1B74CD29A3E89500D86081 /* SchoolAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F1B74E229A3E89500D86081 /* Build configuration list for PBXNativeTarget "SchoolAssistant" */;
+			buildPhases = (
+				2D6D5999CDA3B747EEC438E7 /* [CP] Check Pods Manifest.lock */,
+				1F1B74CA29A3E89500D86081 /* Sources */,
+				1F1B74CB29A3E89500D86081 /* Frameworks */,
+				1F1B74CC29A3E89500D86081 /* Resources */,
+				AA5A1C17A5AFB02811EA8461 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchoolAssistant;
+			productName = SchoolAssistant;
+			productReference = 1F1B74CE29A3E89500D86081 /* SchoolAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F1B74C629A3E89500D86081 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					1F1B74CD29A3E89500D86081 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 1F1B74C929A3E89500D86081 /* Build configuration list for PBXProject "SchoolAssistant" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F1B74C529A3E89500D86081;
+			productRefGroup = 1F1B74CF29A3E89500D86081 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F1B74CD29A3E89500D86081 /* SchoolAssistant */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F1B74CC29A3E89500D86081 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1B74DE29A3E89500D86081 /* LaunchScreen.storyboard in Resources */,
+				1F1B74DB29A3E89500D86081 /* Assets.xcassets in Resources */,
+				1F87393529BDFCB90042452C /* TimesheetTableViewCell.xib in Resources */,
+				1F3535C429C7452300B3B151 /* HomeTaskTableViewCell.xib in Resources */,
+				1FC3317A29B394B400B123C1 /* WeekdayCollectionViewCell.xib in Resources */,
+				1F1B74D929A3E89500D86081 /* Main.storyboard in Resources */,
+				1FE189F429A655E600FECF09 /* SettingsTableViewCell.xib in Resources */,
+				1F7CA82A29A3F95A006D5829 /* LuckiestGuy-Regular.ttf in Resources */,
+				1FD385D629C0C614001D404C /* ColorTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D6D5999CDA3B747EEC438E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SchoolAssistant-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA5A1C17A5AFB02811EA8461 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SchoolAssistant/Pods-SchoolAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F1B74CA29A3E89500D86081 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC3317D29B395C600B123C1 /* DaysOfWeekEnum.swift in Sources */,
+				1FC3317929B394B400B123C1 /* WeekdayCollectionViewCell.swift in Sources */,
+				1F522AE429A4FEF200F66B84 /* RegistrationViewController.swift in Sources */,
+				1F6C72FC29C4CD6C005D4EC1 /* SaveManager.swift in Sources */,
+				1F6C72F329C4B4B5005D4EC1 /* StudentTabBarController.swift in Sources */,
+				1F3535C629C75B8500B3B151 /* UserRole.swift in Sources */,
+				1F1B74D629A3E89500D86081 /* ViewController.swift in Sources */,
+				1F4F89B529B391C500018592 /* TimesheetViewController.swift in Sources */,
+				1F87393A29BE26F40042452C /* TeacherProfileViewController.swift in Sources */,
+				1F88A37429BA07AE000E5208 /* SettingsCellsType.swift in Sources */,
+				1F89BD5129C478A2004D3E98 /* SchoolAPI.swift in Sources */,
+				1FD385D529C0C614001D404C /* ColorTableViewCell.swift in Sources */,
+				1F4F89B329B3918A00018592 /* WeekdayViewController.swift in Sources */,
+				1F89BD4E29C4763D004D3E98 /* UIViewController+Extension.swift in Sources */,
+				1F6C72F929C4B52D005D4EC1 /* TeacherTabBarController.swift in Sources */,
+				1F1B74D229A3E89500D86081 /* AppDelegate.swift in Sources */,
+				1F1B74D429A3E89500D86081 /* SceneDelegate.swift in Sources */,
+				1F87393429BDFCB90042452C /* TimesheetTableViewCell.swift in Sources */,
+				1F522AE629A55C6A00F66B84 /* ProfileViewController.swift in Sources */,
+				1F3535C329C7452300B3B151 /* HomeTaskTableViewCell.swift in Sources */,
+				1F89BD5529C478BA004D3E98 /* SchoolModel.swift in Sources */,
+				1F89BD5329C478AF004D3E98 /* SchoolProvider.swift in Sources */,
+				1F7CA82C29A3FB27006D5829 /* SignInViewController.swift in Sources */,
+				1F87393029BDE9670042452C /* CellsEnum.swift in Sources */,
+				1F3535BE29C7447300B3B151 /* HomeTaskViewController.swift in Sources */,
+				1FE189F329A655E600FECF09 /* SettingsTableViewCell.swift in Sources */,
+				1FE189EF29A652CE00FECF09 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F1B74D729A3E89500D86081 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F1B74D829A3E89500D86081 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F1B74DC29A3E89500D86081 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F1B74DD29A3E89500D86081 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F1B74E029A3E89500D86081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F1B74E129A3E89500D86081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F1B74E329A3E89500D86081 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F48655B995C17346DE6482BB /* Pods-SchoolAssistant.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46WGSYKGFT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SchoolAssistant/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.byby.SchoolAssistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F1B74E429A3E89500D86081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B775E11DCD6018506729F4 /* Pods-SchoolAssistant.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46WGSYKGFT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SchoolAssistant/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.byby.SchoolAssistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F1B74C929A3E89500D86081 /* Build configuration list for PBXProject "SchoolAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F1B74E029A3E89500D86081 /* Debug */,
+				1F1B74E129A3E89500D86081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F1B74E229A3E89500D86081 /* Build configuration list for PBXNativeTarget "SchoolAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F1B74E329A3E89500D86081 /* Debug */,
+				1F1B74E429A3E89500D86081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F1B74C629A3E89500D86081 /* Project object */;
+}
