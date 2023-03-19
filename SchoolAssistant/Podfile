@@ -10,5 +10,8 @@ target 'SchoolAssistant' do
   pod 'RealmSwift'
   pod 'Moya'
   pod 'Moya-ObjectMapper', '2.9'
+  pod 'SnapKit'
+  pod 'SPAlert'
+  pod 'DeviceKit'
 
 end
