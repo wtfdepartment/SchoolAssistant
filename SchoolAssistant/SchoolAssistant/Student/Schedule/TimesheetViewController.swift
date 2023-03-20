@@ -9,31 +9,31 @@ import UIKit
 import SnapKit
 
 class TimesheetViewController: UIViewController {
-    
+
     @IBOutlet weak var timesheetTableView: UITableView!
 
     var colors = [DaysOfWeek]()
     var day: DaysOfWeek = .monday
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCell()
         colors = DaysOfWeek.allCases
         timesheetTableView.dataSource = self
     }
-    
+
     func set(_ day: DaysOfWeek) {
         self.day = day
     }
-    
+
     func registerCell() {
         let nib = UINib(nibName: String(describing: TimesheetTableViewCell.self), bundle: nil)
         timesheetTableView.register(nib, forCellReuseIdentifier: String(describing: TimesheetTableViewCell.self))
         let colorNib = UINib(nibName: String(describing: ColorTableViewCell.self), bundle: nil)
         timesheetTableView.register(colorNib, forCellReuseIdentifier: String(describing: ColorTableViewCell.self))
     }
-    
+
 }
 
 extension TimesheetViewController: UITableViewDataSource {
@@ -51,7 +51,7 @@ extension TimesheetViewController: UITableViewDataSource {
                     return String(describing: TimesheetTableViewCell.self)
             }
         }()
-        
+
         let cell = tableView.dequeueReusableCell(withIdentifier: id, for: indexPath)
         switch indexPath.row {
             case 0:
@@ -63,7 +63,7 @@ extension TimesheetViewController: UITableViewDataSource {
                 return secondCell
             default:
                 guard let thirdCell = cell as? TimesheetTableViewCell else { return cell }
-                
+
                 return thirdCell
         }
     }

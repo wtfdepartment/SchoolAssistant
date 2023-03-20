@@ -25,18 +25,10 @@
                                 <color key="textColor" red="0.47843137250000001" green="0.3294117647" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x96-US-qco">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ввелите номер параграфа" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x96-US-qco">
                                 <rect key="frame" x="12" y="44" width="245" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="06B-U1-KPX"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Lg-Dd-H8n">
-                                <rect key="frame" x="12" y="144" width="245" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="h7p-ez-08l"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -47,13 +39,21 @@
                                 <color key="textColor" red="0.47843137250000001" green="0.3294117647" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите номер упражнения" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Lg-Dd-H8n">
+                                <rect key="frame" x="12" y="144" width="245" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="h7p-ez-08l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Примечание" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySy-lL-yYX">
                                 <rect key="frame" x="12" y="212" width="245" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.47843137250000001" green="0.3294117647" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mSb-1k-jIx">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Введите примечание" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mSb-1k-jIx">
                                 <rect key="frame" x="12" y="244" width="245" height="94"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -93,6 +93,12 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="containerView" destination="hvs-9j-zYg" id="2BK-gu-P9W"/>
+                <outlet property="noteLabel" destination="ySy-lL-yYX" id="IdT-cV-tEi"/>
+                <outlet property="noteTextField" destination="mSb-1k-jIx" id="Jqc-YX-UfQ"/>
+                <outlet property="paragraphLabel" destination="P6S-dM-twZ" id="tzq-D5-mvp"/>
+                <outlet property="paragraphTextField" destination="x96-US-qco" id="Lge-J8-CpV"/>
+                <outlet property="taskLabel" destination="jRQ-cA-4Li" id="RHw-9A-QEd"/>
+                <outlet property="taskTextField" destination="5Lg-Dd-H8n" id="tiL-HX-WRT"/>
             </connections>
             <point key="canvasLocation" x="119.84732824427481" y="174.64788732394368"/>
         </tableViewCell>

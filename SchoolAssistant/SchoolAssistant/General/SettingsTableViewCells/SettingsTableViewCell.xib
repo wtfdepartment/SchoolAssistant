@@ -40,7 +40,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jd7-kZ-drG">
-                                                <rect key="frame" x="57" y="0.0" width="65.333333333333314" height="36"/>
+                                                <rect key="frame" x="56.999999999999993" y="0.0" width="65.333333333333314" height="36"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                             </button>
@@ -48,7 +48,7 @@
                                                 <rect key="frame" x="122.33333333333331" y="2.6666666666666679" width="4.6666666666666714" height="31.000000000000004"/>
                                             </switch>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -63,7 +63,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fzS-iz-wEq" firstAttribute="leading" secondItem="CEV-2d-2Nc" secondAttribute="leading" constant="20" id="0wS-5I-x5y"/>
                             <constraint firstAttribute="bottom" secondItem="fzS-iz-wEq" secondAttribute="bottom" constant="6" id="6Wk-jy-tof"/>
@@ -74,7 +74,7 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="CEV-2d-2Nc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AdE-Nv-x8Z"/>
                     <constraint firstAttribute="trailing" secondItem="CEV-2d-2Nc" secondAttribute="trailing" id="DwX-QT-gDI"/>
