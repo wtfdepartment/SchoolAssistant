@@ -17,6 +17,10 @@
 		1F3535C329C7452300B3B151 /* HomeTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3535C129C7452300B3B151 /* HomeTaskTableViewCell.swift */; };
 		1F3535C429C7452300B3B151 /* HomeTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3535C229C7452300B3B151 /* HomeTaskTableViewCell.xib */; };
 		1F3535C629C75B8500B3B151 /* UserRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3535C529C75B8500B3B151 /* UserRole.swift */; };
+		1F3535CA29C770DF00B3B151 /* TeacherScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3535C829C770DF00B3B151 /* TeacherScheduleCollectionViewCell.swift */; };
+		1F3535CB29C770DF00B3B151 /* TeacherScheduleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F3535C929C770DF00B3B151 /* TeacherScheduleCollectionViewCell.xib */; };
+		1F3535CE29C774F300B3B151 /* TeacherScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3535CD29C774F200B3B151 /* TeacherScheduleViewController.swift */; };
+		1F3535D029C775D700B3B151 /* TeacherWeekdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3535CF29C775D700B3B151 /* TeacherWeekdayViewController.swift */; };
 		1F4F89B329B3918A00018592 /* WeekdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F89B229B3918A00018592 /* WeekdayViewController.swift */; };
 		1F4F89B529B391C500018592 /* TimesheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4F89B429B391C500018592 /* TimesheetViewController.swift */; };
 		1F522AE429A4FEF200F66B84 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F522AE329A4FEF200F66B84 /* RegistrationViewController.swift */; };
@@ -38,6 +42,12 @@
 		1FC3317929B394B400B123C1 /* WeekdayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3317729B394B400B123C1 /* WeekdayCollectionViewCell.swift */; };
 		1FC3317A29B394B400B123C1 /* WeekdayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FC3317829B394B400B123C1 /* WeekdayCollectionViewCell.xib */; };
 		1FC3317D29B395C600B123C1 /* DaysOfWeekEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3317C29B395C600B123C1 /* DaysOfWeekEnum.swift */; };
+		1FC739BB29C89B9C00269A9B /* GradeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC739B929C89B9C00269A9B /* GradeTableViewCell.swift */; };
+		1FC739BC29C89B9C00269A9B /* GradeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FC739BA29C89B9C00269A9B /* GradeTableViewCell.xib */; };
+		1FC739BE29C89BAD00269A9B /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC739BD29C89BAD00269A9B /* GradeViewController.swift */; };
+		1FC739C129C8AAF900269A9B /* TeachersClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC739C029C8AAF900269A9B /* TeachersClassViewController.swift */; };
+		1FC739C529C8AB8600269A9B /* TeachersClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC739C329C8AB8600269A9B /* TeachersClassTableViewCell.swift */; };
+		1FC739C629C8AB8600269A9B /* TeachersClassTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FC739C429C8AB8600269A9B /* TeachersClassTableViewCell.xib */; };
 		1FD385D529C0C614001D404C /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD385D329C0C614001D404C /* ColorTableViewCell.swift */; };
 		1FD385D629C0C614001D404C /* ColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD385D429C0C614001D404C /* ColorTableViewCell.xib */; };
 		1FE189EF29A652CE00FECF09 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE189EE29A652CE00FECF09 /* SettingsViewController.swift */; };
@@ -59,6 +69,10 @@
 		1F3535C129C7452300B3B151 /* HomeTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTaskTableViewCell.swift; sourceTree = "<group>"; };
 		1F3535C229C7452300B3B151 /* HomeTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTaskTableViewCell.xib; sourceTree = "<group>"; };
 		1F3535C529C75B8500B3B151 /* UserRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRole.swift; sourceTree = "<group>"; };
+		1F3535C829C770DF00B3B151 /* TeacherScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
+		1F3535C929C770DF00B3B151 /* TeacherScheduleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherScheduleCollectionViewCell.xib; sourceTree = "<group>"; };
+		1F3535CD29C774F200B3B151 /* TeacherScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherScheduleViewController.swift; sourceTree = "<group>"; };
+		1F3535CF29C775D700B3B151 /* TeacherWeekdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherWeekdayViewController.swift; sourceTree = "<group>"; };
 		1F4F89B229B3918A00018592 /* WeekdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayViewController.swift; sourceTree = "<group>"; };
 		1F4F89B429B391C500018592 /* TimesheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetViewController.swift; sourceTree = "<group>"; };
 		1F522AE329A4FEF200F66B84 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +94,12 @@
 		1FC3317729B394B400B123C1 /* WeekdayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayCollectionViewCell.swift; sourceTree = "<group>"; };
 		1FC3317829B394B400B123C1 /* WeekdayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeekdayCollectionViewCell.xib; sourceTree = "<group>"; };
 		1FC3317C29B395C600B123C1 /* DaysOfWeekEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysOfWeekEnum.swift; sourceTree = "<group>"; };
+		1FC739B929C89B9C00269A9B /* GradeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeTableViewCell.swift; sourceTree = "<group>"; };
+		1FC739BA29C89B9C00269A9B /* GradeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradeTableViewCell.xib; sourceTree = "<group>"; };
+		1FC739BD29C89BAD00269A9B /* GradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeViewController.swift; sourceTree = "<group>"; };
+		1FC739C029C8AAF900269A9B /* TeachersClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersClassViewController.swift; sourceTree = "<group>"; };
+		1FC739C329C8AB8600269A9B /* TeachersClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersClassTableViewCell.swift; sourceTree = "<group>"; };
+		1FC739C429C8AB8600269A9B /* TeachersClassTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeachersClassTableViewCell.xib; sourceTree = "<group>"; };
 		1FD385D329C0C614001D404C /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
 		1FD385D429C0C614001D404C /* ColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorTableViewCell.xib; sourceTree = "<group>"; };
 		1FE189EE29A652CE00FECF09 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +178,25 @@
 			path = HomeTaskTableViewCell;
 			sourceTree = "<group>";
 		};
+		1F3535C729C7709500B3B151 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				1F3535CC29C7749800B3B151 /* ScheduleCollectionViewCell */,
+				1F3535CF29C775D700B3B151 /* TeacherWeekdayViewController.swift */,
+				1F3535CD29C774F200B3B151 /* TeacherScheduleViewController.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		1F3535CC29C7749800B3B151 /* ScheduleCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1F3535C829C770DF00B3B151 /* TeacherScheduleCollectionViewCell.swift */,
+				1F3535C929C770DF00B3B151 /* TeacherScheduleCollectionViewCell.xib */,
+			);
+			path = ScheduleCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		1F6C72EC29C4B3F3005D4EC1 /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,9 +251,11 @@
 		1F7CA82729A3F0F3006D5829 /* Teacher */ = {
 			isa = PBXGroup;
 			children = (
-				1F3535BC29C7443700B3B151 /* HomeTask */,
-				1F6C72EC29C4B3F3005D4EC1 /* TabBarController */,
 				1F87393829BE26D20042452C /* Profile */,
+				1F3535C729C7709500B3B151 /* Schedule */,
+				1F3535BC29C7443700B3B151 /* HomeTask */,
+				1FC739B729C89B2A00269A9B /* Grades */,
+				1F6C72EC29C4B3F3005D4EC1 /* TabBarController */,
 			);
 			path = Teacher;
 			sourceTree = "<group>";
@@ -262,6 +303,7 @@
 		1F87393829BE26D20042452C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				1FC739BF29C8AADB00269A9B /* TeachersClass */,
 				1F87393929BE26F40042452C /* TeacherProfileViewController.swift */,
 			);
 			path = Profile;
@@ -313,6 +355,42 @@
 				1FC3317C29B395C600B123C1 /* DaysOfWeekEnum.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		1FC739B729C89B2A00269A9B /* Grades */ = {
+			isa = PBXGroup;
+			children = (
+				1FC739B829C89B6F00269A9B /* GradeTableViewCell */,
+				1FC739BD29C89BAD00269A9B /* GradeViewController.swift */,
+			);
+			path = Grades;
+			sourceTree = "<group>";
+		};
+		1FC739B829C89B6F00269A9B /* GradeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1FC739B929C89B9C00269A9B /* GradeTableViewCell.swift */,
+				1FC739BA29C89B9C00269A9B /* GradeTableViewCell.xib */,
+			);
+			path = GradeTableViewCell;
+			sourceTree = "<group>";
+		};
+		1FC739BF29C8AADB00269A9B /* TeachersClass */ = {
+			isa = PBXGroup;
+			children = (
+				1FC739C229C8AB0300269A9B /* TeachersClassTableViewCell */,
+				1FC739C029C8AAF900269A9B /* TeachersClassViewController.swift */,
+			);
+			path = TeachersClass;
+			sourceTree = "<group>";
+		};
+		1FC739C229C8AB0300269A9B /* TeachersClassTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1FC739C329C8AB8600269A9B /* TeachersClassTableViewCell.swift */,
+				1FC739C429C8AB8600269A9B /* TeachersClassTableViewCell.xib */,
+			);
+			path = TeachersClassTableViewCell;
 			sourceTree = "<group>";
 		};
 		1FDF075029B0C96400155786 /* SettingsTableViewCells */ = {
@@ -403,8 +481,11 @@
 			files = (
 				1F1B74DE29A3E89500D86081 /* LaunchScreen.storyboard in Resources */,
 				1F1B74DB29A3E89500D86081 /* Assets.xcassets in Resources */,
+				1F3535CB29C770DF00B3B151 /* TeacherScheduleCollectionViewCell.xib in Resources */,
+				1FC739C629C8AB8600269A9B /* TeachersClassTableViewCell.xib in Resources */,
 				1F87393529BDFCB90042452C /* TimesheetTableViewCell.xib in Resources */,
 				1F3535C429C7452300B3B151 /* HomeTaskTableViewCell.xib in Resources */,
+				1FC739BC29C89B9C00269A9B /* GradeTableViewCell.xib in Resources */,
 				1FC3317A29B394B400B123C1 /* WeekdayCollectionViewCell.xib in Resources */,
 				1F1B74D929A3E89500D86081 /* Main.storyboard in Resources */,
 				1FE189F429A655E600FECF09 /* SettingsTableViewCell.xib in Resources */,
@@ -462,12 +543,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FC739C529C8AB8600269A9B /* TeachersClassTableViewCell.swift in Sources */,
 				1FC3317D29B395C600B123C1 /* DaysOfWeekEnum.swift in Sources */,
 				1FC3317929B394B400B123C1 /* WeekdayCollectionViewCell.swift in Sources */,
 				1F522AE429A4FEF200F66B84 /* RegistrationViewController.swift in Sources */,
+				1FC739C129C8AAF900269A9B /* TeachersClassViewController.swift in Sources */,
 				1F6C72FC29C4CD6C005D4EC1 /* SaveManager.swift in Sources */,
 				1F6C72F329C4B4B5005D4EC1 /* StudentTabBarController.swift in Sources */,
 				1F3535C629C75B8500B3B151 /* UserRole.swift in Sources */,
+				1F3535CA29C770DF00B3B151 /* TeacherScheduleCollectionViewCell.swift in Sources */,
 				1F1B74D629A3E89500D86081 /* ViewController.swift in Sources */,
 				1F4F89B529B391C500018592 /* TimesheetViewController.swift in Sources */,
 				1F87393A29BE26F40042452C /* TeacherProfileViewController.swift in Sources */,
@@ -477,16 +561,20 @@
 				1F4F89B329B3918A00018592 /* WeekdayViewController.swift in Sources */,
 				1F89BD4E29C4763D004D3E98 /* UIViewController+Extension.swift in Sources */,
 				1F6C72F929C4B52D005D4EC1 /* TeacherTabBarController.swift in Sources */,
+				1F3535CE29C774F300B3B151 /* TeacherScheduleViewController.swift in Sources */,
 				1F1B74D229A3E89500D86081 /* AppDelegate.swift in Sources */,
 				1F1B74D429A3E89500D86081 /* SceneDelegate.swift in Sources */,
 				1F87393429BDFCB90042452C /* TimesheetTableViewCell.swift in Sources */,
 				1F522AE629A55C6A00F66B84 /* ProfileViewController.swift in Sources */,
 				1F3535C329C7452300B3B151 /* HomeTaskTableViewCell.swift in Sources */,
+				1FC739BE29C89BAD00269A9B /* GradeViewController.swift in Sources */,
+				1F3535D029C775D700B3B151 /* TeacherWeekdayViewController.swift in Sources */,
 				1F89BD5529C478BA004D3E98 /* SchoolModel.swift in Sources */,
 				1F89BD5329C478AF004D3E98 /* SchoolProvider.swift in Sources */,
 				1F7CA82C29A3FB27006D5829 /* SignInViewController.swift in Sources */,
 				1F87393029BDE9670042452C /* CellsEnum.swift in Sources */,
 				1F3535BE29C7447300B3B151 /* HomeTaskViewController.swift in Sources */,
+				1FC739BB29C89B9C00269A9B /* GradeTableViewCell.swift in Sources */,
 				1FE189F329A655E600FECF09 /* SettingsTableViewCell.swift in Sources */,
 				1FE189EF29A652CE00FECF09 /* SettingsViewController.swift in Sources */,
 			);
