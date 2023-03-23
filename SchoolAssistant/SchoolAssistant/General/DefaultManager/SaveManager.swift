@@ -10,8 +10,6 @@ import Foundation
 final class SaveManager {
     private static let manager = UserDefaults.standard
    
-    static var user: UserInfoModel?
-    
     static var notificationStatus: Bool {
         get {
             manager.value(forKey: #function) as? Bool ?? false
@@ -69,6 +67,42 @@ final class SaveManager {
     static var isLogin: Bool {
         get {
             manager.value(forKey: #function) as? Bool ?? true
+        }
+        set {
+            manager.set(newValue, forKey: #function)
+        }
+    }
+    
+    static var classCode: String {
+        get {
+            manager.value(forKey: #function) as? String ?? ""
+        }
+        set {
+            manager.set(newValue, forKey: #function)
+        }
+    }
+    
+    static var firstName: String {
+        get {
+            manager.value(forKey: #function) as? String ?? ""
+        }
+        set {
+            manager.set(newValue, forKey: #function)
+        }
+    }
+    
+    static var lastName: String {
+        get {
+            manager.value(forKey: #function) as? String ?? ""
+        }
+        set {
+            manager.set(newValue, forKey: #function)
+        }
+    }
+    
+    static var assignedTeacher: String {
+        get {
+            manager.value(forKey: #function) as? String ?? ""
         }
         set {
             manager.set(newValue, forKey: #function)

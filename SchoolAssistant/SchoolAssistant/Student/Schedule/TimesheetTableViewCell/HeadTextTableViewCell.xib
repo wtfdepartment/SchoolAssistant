@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProText-Semibold.ttf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="HeadTextTableViewCell" customModule="SchoolAssistant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idw-sF-jPQ">
+                        <rect key="frame" x="20" y="30" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="yS3-3Y-5bL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subject/task" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJD-7Z-3UM">
+                        <rect key="frame" x="80" y="30" width="259" height="20"/>
+                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="class" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngn-Gd-oza">
+                        <rect key="frame" x="339" y="30.333333333333336" width="70" height="19.333333333333336"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Lfd-KH-LER"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hJD-7Z-3UM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2Hb-FD-Ih2"/>
+                    <constraint firstAttribute="trailing" secondItem="Ngn-Gd-oza" secondAttribute="trailing" constant="20" id="7fd-gz-5ni"/>
+                    <constraint firstItem="idw-sF-jPQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Lmg-FC-wUL"/>
+                    <constraint firstItem="Ngn-Gd-oza" firstAttribute="leading" secondItem="hJD-7Z-3UM" secondAttribute="trailing" id="kEN-dP-xeV"/>
+                    <constraint firstItem="Ngn-Gd-oza" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pEr-K4-Nce"/>
+                    <constraint firstItem="idw-sF-jPQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="qgP-U7-0no"/>
+                    <constraint firstItem="hJD-7Z-3UM" firstAttribute="leading" secondItem="idw-sF-jPQ" secondAttribute="trailing" id="yJf-jN-fju"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="classLabel" destination="Ngn-Gd-oza" id="ucw-V5-Ab0"/>
+                <outlet property="subjectTaskLabel" destination="hJD-7Z-3UM" id="wwP-4K-PCE"/>
+                <outlet property="timeLabel" destination="idw-sF-jPQ" id="V7b-uQ-5Cj"/>
+            </connections>
+            <point key="canvasLocation" x="180.91603053435114" y="32.394366197183103"/>
+        </tableViewCell>
+    </objects>
+</document>

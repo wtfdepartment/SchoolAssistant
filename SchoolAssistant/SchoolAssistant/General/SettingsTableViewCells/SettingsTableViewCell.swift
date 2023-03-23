@@ -26,6 +26,7 @@ class SettingsTableViewCell: UITableViewCell {
     }
     
     func setUpUI() {
+        self.selectionStyle = .none
         containerView.snp.makeConstraints { make in
             make.height.equalTo(68)
         }

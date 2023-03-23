@@ -9,24 +9,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="398" id="KGk-i7-Jjw" customClass="HomeTaskTableViewCell" customModule="SchoolAssistant" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="349" height="398"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="421" id="KGk-i7-Jjw" customClass="HomeTaskTableViewCell" customModule="SchoolAssistant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="421"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="349" height="398"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="349" height="421"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvs-9j-zYg">
-                        <rect key="frame" x="40" y="19" width="269" height="350"/>
+                        <rect key="frame" x="20" y="8" width="309" height="350"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Параграф" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6S-dM-twZ">
-                                <rect key="frame" x="12" y="12" width="245" height="24"/>
+                                <rect key="frame" x="12" y="12" width="285" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.47843137250000001" green="0.3294117647" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ввелите номер параграфа" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x96-US-qco">
-                                <rect key="frame" x="12" y="44" width="245" height="44"/>
+                                <rect key="frame" x="12" y="44" width="285" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="06B-U1-KPX"/>
                                 </constraints>
@@ -34,13 +34,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Упражнение" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRQ-cA-4Li">
-                                <rect key="frame" x="12" y="112" width="245" height="24"/>
+                                <rect key="frame" x="12" y="112" width="285" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.47843137250000001" green="0.3294117647" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите номер упражнения" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Lg-Dd-H8n">
-                                <rect key="frame" x="12" y="144" width="245" height="44"/>
+                                <rect key="frame" x="12" y="144" width="285" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="h7p-ez-08l"/>
                                 </constraints>
@@ -48,13 +48,16 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Примечание" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySy-lL-yYX">
-                                <rect key="frame" x="12" y="212" width="245" height="24"/>
+                                <rect key="frame" x="12" y="212" width="285" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.47843137250000001" green="0.3294117647" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Введите примечание" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mSb-1k-jIx">
-                                <rect key="frame" x="12" y="244" width="245" height="94"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите примечание" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mSb-1k-jIx">
+                                <rect key="frame" x="12" y="244" width="285" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3GP-hH-SYl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -63,7 +66,6 @@
                         <constraints>
                             <constraint firstItem="ySy-lL-yYX" firstAttribute="leading" secondItem="hvs-9j-zYg" secondAttribute="leading" constant="12" id="1Tl-A9-uhY"/>
                             <constraint firstItem="ySy-lL-yYX" firstAttribute="top" secondItem="5Lg-Dd-H8n" secondAttribute="bottom" constant="24" id="2ed-Os-Xbp"/>
-                            <constraint firstAttribute="bottom" secondItem="mSb-1k-jIx" secondAttribute="bottom" constant="12" id="7CC-UM-h0j"/>
                             <constraint firstItem="x96-US-qco" firstAttribute="top" secondItem="P6S-dM-twZ" secondAttribute="bottom" constant="8" id="7lF-uU-TbY"/>
                             <constraint firstItem="5Lg-Dd-H8n" firstAttribute="leading" secondItem="hvs-9j-zYg" secondAttribute="leading" constant="12" id="Bbl-Pg-f8t"/>
                             <constraint firstItem="5Lg-Dd-H8n" firstAttribute="top" secondItem="jRQ-cA-4Li" secondAttribute="bottom" constant="8" id="F34-5e-XIt"/>
@@ -83,11 +85,28 @@
                             <constraint firstAttribute="trailing" secondItem="x96-US-qco" secondAttribute="trailing" constant="12" id="ziM-Mk-JyH"/>
                         </constraints>
                     </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyn-pe-WQp">
+                        <rect key="frame" x="114.66666666666669" y="368" width="120" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="3ni-4u-PAL"/>
+                            <constraint firstAttribute="width" constant="120" id="fpO-Pj-3kv"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="filled" title="Отправить"/>
+                        <connections>
+                            <action selector="sentAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="clI-xi-ZIm"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="hvs-9j-zYg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="921-ne-C3E"/>
-                    <constraint firstItem="hvs-9j-zYg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="VAK-Xp-ppO"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="hvs-9j-zYg" secondAttribute="trailing" constant="20" id="bsc-C7-13m"/>
+                    <constraint firstItem="hvs-9j-zYg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="0GZ-fQ-vzG"/>
+                    <constraint firstItem="vyn-pe-WQp" firstAttribute="top" secondItem="hvs-9j-zYg" secondAttribute="bottom" constant="10" id="4RQ-0S-ij1"/>
+                    <constraint firstItem="hvs-9j-zYg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AcZ-yC-VeS"/>
+                    <constraint firstAttribute="trailing" secondItem="hvs-9j-zYg" secondAttribute="trailing" constant="20" id="HzR-yC-8lS"/>
+                    <constraint firstItem="vyn-pe-WQp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="aFC-mQ-N6d"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vyn-pe-WQp" secondAttribute="bottom" constant="10" id="akZ-Rs-1mI"/>
+                    <constraint firstItem="hvs-9j-zYg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="eZ5-Uo-AWJ"/>
+                    <constraint firstItem="hvs-9j-zYg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="i9f-7c-8Tk"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -97,10 +116,11 @@
                 <outlet property="noteTextField" destination="mSb-1k-jIx" id="Jqc-YX-UfQ"/>
                 <outlet property="paragraphLabel" destination="P6S-dM-twZ" id="tzq-D5-mvp"/>
                 <outlet property="paragraphTextField" destination="x96-US-qco" id="Lge-J8-CpV"/>
+                <outlet property="sentButton" destination="vyn-pe-WQp" id="lNc-Hd-zVc"/>
                 <outlet property="taskLabel" destination="jRQ-cA-4Li" id="RHw-9A-QEd"/>
                 <outlet property="taskTextField" destination="5Lg-Dd-H8n" id="tiL-HX-WRT"/>
             </connections>
-            <point key="canvasLocation" x="119.84732824427481" y="174.64788732394368"/>
+            <point key="canvasLocation" x="116.79389312977099" y="163.73239436619718"/>
         </tableViewCell>
     </objects>
 </document>

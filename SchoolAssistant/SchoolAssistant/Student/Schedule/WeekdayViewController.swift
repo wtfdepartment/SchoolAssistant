@@ -25,6 +25,10 @@ class WeekdayViewController: UIViewController {
         collectionView.register(nib, forCellWithReuseIdentifier: WeekdayCollectionViewCell.id)
         collectionView.dataSource = self
         collectionView.delegate = self
+        NumberOfWeek.allCases.forEach { numberOfWeek in
+            setUpSegmentControlUI(numberOfWeek)
+        }
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", image: UIImage(systemName: "gearshape"), target: self, action: #selector(homeTaskAction))
     }
     
     
@@ -39,8 +43,17 @@ class WeekdayViewController: UIViewController {
 //        collectionView.contentInset = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
     }
     
+    func setUpSegmentControlUI(_ text: NumberOfWeek) {
+        segmentControl.setTitle(text.num, forSegmentAt: text.rawValue)
+    }
+    
     @IBAction func selectedIndexDidChange(_ sender: Any) {
         collectionView.reloadData()
+    }
+    @IBAction func homeTaskAction(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: String(describing: StudentsHomeWorkViewController.self)) else { return }
+        self.navigationController?.pushViewController(vc, animated: true)
+  
     }
     
 }
@@ -65,14 +78,13 @@ extension WeekdayViewController: UICollectionViewDataSource {
 
 extension WeekdayViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-            return UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+        return UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 20)
         }
     
 
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             let collectionViewWidth = collectionView.bounds.width
             return CGSize(width: collectionViewWidth/2.5, height: collectionViewWidth/2.5)
-//            return CGSize(width: 167, height: 167)
         }
 
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
@@ -91,14 +103,28 @@ extension WeekdayViewController: UICollectionViewDelegate {
         
         guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: TimesheetViewController.self)) as? TimesheetViewController else { return }
         
-        let countOfDays = weekNumber == 0 ? -7 : 7
-        vc.set(day)
+        var titleDay = Date.currentDay + 7 * segmentControl.selectedSegmentIndex
+        var titleMonth = Date.currentMonth
         
-        let someOperations = day.rawValue + 1 >= Date.dayOfWeek ? day.rawValue + 1 - Date.dayOfWeek : -(Date.dayOfWeek - 1 - day.rawValue)
+        if indexPath.row + 1 < Date.currentDayOfWeek {
+            titleDay -= Date.currentDayOfWeek - indexPath.row
+            titleDay += 1
+        } else if indexPath.row + 1 > Date.currentDayOfWeek {
+            titleDay += indexPath.row + 1 - Date.currentDayOfWeek
+        }
         
-        let dayShowed = Date.day + countOfDays + someOperations
+        if titleDay > Date.daysInMonth {
+            titleDay -= Date.daysInMonth
+            if titleMonth + 1 > 12 {
+                titleMonth = 1
+            } else {
+                titleMonth += 1
+            }
+        }
         
-        vc.navigationItem.title = "\(day.day) \(dayShowed)"
+        vc.set(day, showingDay: titleDay, showingMonth: titleMonth)
+        
+        vc.navigationItem.title = "\(day.day) \(titleDay)"
         navigationController?.pushViewController(vc, animated: true)
     }
 }

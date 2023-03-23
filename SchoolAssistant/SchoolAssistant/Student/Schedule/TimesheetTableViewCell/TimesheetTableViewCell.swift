@@ -18,17 +18,44 @@ class TimesheetTableViewCell: UITableViewCell {
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var roomLabel: UILabel!
     
+    private var time: TimeType = .firstLesson
+    private var dataTeacher: ClassType?
+    private var dataStudent: StudentSubjectType?
+    private var day = 0
+    private var month = 0
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpUI()
     }
     
+    func set(time: TimeType, data: ClassType) {
+        self.time = time
+        self.dataTeacher = data
+        setUpUI()
+    }
+    
+    func set(time: TimeType, data: StudentSubjectType, day: Int, month: Int) {
+        self.time = time
+        self.dataStudent = data
+        self.day = day
+        self.month = month
+        setUpUI()
+    }
+    
     func setUpUI() {
-        timeLabel.text = "8.00 -\n8.45"
+        self.selectionStyle = .none
+        timeLabel.text = time.time
         timeLabel.numberOfLines = 2
-        subjectLabel.text = "Математика"
-        taskLabel.text = "упр 100, стр 38"
-        roomLabel.text = "101"
+        if let dataTeacher {
+            subjectLabel.text = dataTeacher.lesson
+            roomLabel.text = dataTeacher.room
+            taskLabel.isHidden = true
+        } else if let dataStudent {
+            subjectLabel.text = dataStudent.subject
+            roomLabel.text = dataStudent.room
+        }
+        
         
     }
     
