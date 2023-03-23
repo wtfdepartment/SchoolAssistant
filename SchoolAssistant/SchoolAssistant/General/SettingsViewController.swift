@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum personType {
+    case teacher
+    case student
+}
+
 class SettingsViewController: UIViewController {
     
     @IBOutlet weak var profileImageView: UIImageView!
@@ -22,6 +27,9 @@ class SettingsViewController: UIViewController {
         settingsTableView.register(nib, forCellReuseIdentifier: SettingsTableViewCell.id)
         settingsTableView.delegate = self
         settingsTableView.dataSource = self
+        
+        personNameLabel.text = "\(SaveManager.firstName) \(SaveManager.lastName)"
+        personEmailLabel.text = SaveManager.email
     }
     
     func setUpProfileUI() {
@@ -39,8 +47,11 @@ extension SettingsViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SettingsTableViewCell.self), for: indexPath) as? SettingsTableViewCell else { return UITableViewCell() }
         
         cell.set(SettingsType.allCases[indexPath.row])
+//        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 60
         return cell
     }
+
 }
 
 extension SettingsViewController: UITableViewDelegate {

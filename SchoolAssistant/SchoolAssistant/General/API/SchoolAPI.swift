@@ -10,6 +10,8 @@ import Moya
 
 enum API {
     case getUserInfo(email: String, password: String)
+    case getHomework(classCode: String, accessToken: String)
+    case addHomework(classCode: String, date: String, paragraph: Int, exercise: Int, accessToken: String)
 }
 
 extension API: TargetType {
@@ -19,15 +21,21 @@ extension API: TargetType {
     
     var path: String {
         switch self {
-            case .getUserInfo(_, _):
+            case .getUserInfo:
                 return "/auth"
+            case .getHomework(let classCode, _):
+                return "/homework/\(classCode)"
+            case .addHomework:
+                return "/homework"
         }
     }
     
     var method: Moya.Method {
         switch self {
-            case .getUserInfo:
+            case .getUserInfo, .addHomework:
                 return .post
+            case .getHomework:
+                return .get
         }
     }
     
@@ -39,16 +47,31 @@ extension API: TargetType {
         guard let parameters else { return .requestPlain }
         
         switch self {
-            case .getUserInfo(_, _):
+            case .getUserInfo, .addHomework:
                 return .requestParameters(parameters: parameters, encoding: encoding)
+            case .addHomework(let classCode, let date, let paragraph, let exercise, let accessToken):
+                return .requestParameters(parameters: parameters, encoding: encoding)
+                
+                let homework = Homework(classCode: classCode, subject: "maths", assignment: [Assignment(date: date, paragraph: paragraph, exercise: exercise)])
+                return .requestJSONEncodable(homework)
+            default:
+                return .requestPlain
         }
     }
     
     var headers: [String : String]? {
+        var headers = [String : String]()
         switch self {
-            case .getUserInfo(_, _):
-                return nil
+            case .getHomework(_, let accessToken):
+                headers["Authorization"] = "Bearer \(accessToken)"
+            case .addHomework(_, _, _, _, let accessToken):
+                headers["Content-type"] = "application/json; charset=UTF-8"
+                headers["Authorization"] = "Bearer \(accessToken)"
+            default:
+                break
         }
+        
+        return headers
     }
     
     var parameters: [String : Any]? {
@@ -57,6 +80,16 @@ extension API: TargetType {
             case .getUserInfo(let email, let password):
                 parameters["email"] = email
                 parameters["password"] = password
+            case .addHomework(let classCode, let date, let paragraph, let exercise, _):
+                parameters["classCode"] = classCode.replacingOccurrences(of: "\"", with: "")
+                parameters["subject"] = "maths"
+                parameters["assignment"] = [[
+                    "date": date,
+                    "paragraph": paragraph,
+                    "exercise": exercise
+                ]]
+            default:
+                break
         }
         
         return parameters
@@ -64,8 +97,34 @@ extension API: TargetType {
     
     var encoding: ParameterEncoding {
         switch self {
-            case .getUserInfo(_, _):
+            case .getUserInfo, .addHomework:
                 return JSONEncoding.default
+            case .getHomework:
+                return URLEncoding.queryString
         }
     }
+}
+
+struct Homework: Codable {
+    enum CodingKeys: String, CodingKey {
+        case classCode = "classCode"
+        case subject = "subject"
+        case assignment = "assignment"
+    }
+    
+    let classCode: String
+    let subject: String
+    let assignment: [Assignment]
+}
+
+struct Assignment: Codable {
+    enum CodingKeys: String, CodingKey {
+        case date = "date"
+        case paragraph = "paragraph"
+        case exercise = "exercise"
+    }
+    
+    let date: String
+    let paragraph: Int
+    let exercise: Int
 }

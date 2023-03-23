@@ -8,6 +8,18 @@
 	</array>
 	<key>Item</key>
 	<string>LuckiestGuy-Regular.ttf</string>
+	<key>Font1</key>
+	<string>SFProText-Regular.ttf</string>
+	<key>Font2</key>
+	<string>SFProText-Bold.ttf</string>
+	<key>Font3</key>
+	<string>SFProText-Semibold.ttf</string>
+	<key>Font4</key>
+	<string>Inter-Medium.otf</string>
+	<key>Font5</key>
+	<string>Inter-Regular.otf</string>
+	<key>Font6</key>
+	<string>SF-Pro-Text-Black.otf</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

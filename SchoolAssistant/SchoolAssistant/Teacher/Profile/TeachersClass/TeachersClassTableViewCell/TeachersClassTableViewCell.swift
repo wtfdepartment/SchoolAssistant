@@ -16,7 +16,7 @@ class TeachersClassTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        self.selectionStyle = .none
     }
 
    

@@ -28,6 +28,9 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        personNameLabel.text = "\(SaveManager.firstName) \(SaveManager.lastName)"
+        personScholLocationLabel.text = "ГУО \"8 Гимназия \nг. Минск\""
+        teacherNameLabel.text = "\(SaveManager.assignedTeacher)"
         setUptitleLabelUI()
         addProfileViewUI(to: profileInformationView)
         addProfileViewUI(to: teacherInformationView)

@@ -91,8 +91,14 @@ class RegistrationViewController: UIViewController {
             SaveManager.email = userInfo.email
             SaveManager.password = userInfo.password
             SaveManager.accessToken = accessToken
-            SaveManager.user = userInfo
             SaveManager.role = userInfo.role
+            SaveManager.classCode = userInfo.`class`
+            SaveManager.firstName = userInfo.firstName
+            SaveManager.lastName = userInfo.lastName
+            if let teacher = userInfo.teacher {
+                SaveManager.assignedTeacher = teacher
+            }
+            
             SaveManager.isLogin = true
             
             if userInfo.role == "teacher" {
